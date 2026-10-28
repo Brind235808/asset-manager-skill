@@ -115,7 +115,8 @@ python "D:\ASSETS\_SYSTEM\assets.py" dupes
 - 构建/刷新：`python "D:\ASSETS\_SYSTEM\wiki_ip_map.py" --apply`（Bangumi + B站 wiki + 可选图标源；需要网络和缓存）。
 - 人工补充：`ip-map-add "角色" "作品" --aliases "英文名,别名"`。
 - 待确认：`ip-review --apply`。
-- ACG/AI 内容整理用单独的 `acg_ip_map.json` 和 `acg_ip_map.py`，不混进 MOD 分类；完整构建方式见 [references/ip-mapping.md](references/ip-mapping.md)。仓库不附带完整第三方映射数据。
+- ACG/AI 内容整理用单独的 `acg_ip_map.json` 和 `acg_ip_map.py`，不混进 MOD 分类；完整构建方式见 [references/ip-mapping.md](references/ip-mapping.md)。
+- 仓库 `data/` 附带构建好的映射快照；安装时只在目标不存在时复制，不覆盖已有表。数据来源与许可见 [DATA_LICENSE.md](DATA_LICENSE.md)。
 
 ## 空间、重复与迁移
 

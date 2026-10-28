@@ -15,6 +15,18 @@ New-Item -ItemType Directory -Force -Path (Join-Path $SystemDir "backups") | Out
 Copy-Item (Join-Path $SkillRoot "scripts\*.py") $SystemDir -Force
 Copy-Item (Join-Path $SkillRoot "scripts\requirements.txt") $SystemDir -Force
 
+$DataDir = Join-Path $SkillRoot "data"
+foreach ($MapName in @("ip_map.json", "acg_ip_map.json")) {
+    $MapSource = Join-Path $DataDir $MapName
+    $MapTarget = Join-Path $SystemDir $MapName
+    if ((Test-Path $MapSource) -and -not (Test-Path $MapTarget)) {
+        Copy-Item $MapSource $MapTarget -Force
+        Write-Host "Installed bundled $MapName"
+    } elseif (Test-Path $MapTarget) {
+        Write-Host "Keeping existing $MapName"
+    }
+}
+
 $ConfigPath = Join-Path $SystemDir "config.json"
 if (-not (Test-Path $ConfigPath)) {
     Copy-Item (Join-Path $SkillRoot "config\config.example.json") $ConfigPath

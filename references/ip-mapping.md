@@ -66,9 +66,18 @@ python "D:\ASSETS\_SYSTEM\acg_ip_map.py" --lookup "甘雨"
 
 结果包含 `characters`、`ambiguous`、`character_subjects` 和来源元数据。多作品角色（如 `爱丽丝`）不会硬归。
 
+## 附带快照
+
+仓库 `data/` 附带构建好的快照：
+
+- `data/ip_map.json`：2,573 个游戏/MOD 角色；
+- `data/acg_ip_map.json`：44,821 个 ACG 角色。
+
+安装脚本只在 `_SYSTEM` 里没有同名文件时复制，不会覆盖本地已有映射。数据来源和再分发条件见 [../DATA_LICENSE.md](../DATA_LICENSE.md)。
+
 ## 许可提醒
 
-仓库不附带完整 `ip_map.json` / `acg_ip_map.json` / 抓取缓存。原因是第三方数据条款不同，而且映射会随新角色变化。使用者应自行从来源构建，并遵守各站点条款：
+代码是 MIT；`data/` 映射是单独的数据层，不自动适用 MIT。第三方数据条款不同，而且映射会随新角色变化。使用者应遵守各站点条款：
 
 - 萌娘百科内容：CC BY-NC-SA，个人/非商业使用并署名；
 - Bangumi、B站 wiki、Fandom、Wikipedia：各自的 API/内容条款；

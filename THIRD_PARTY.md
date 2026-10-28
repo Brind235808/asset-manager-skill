@@ -1,7 +1,9 @@
 # Third-party notices
 
-This repository contains original code and documentation. It does **not**
-bundle third-party mapping dumps, game assets, card images, or mod packages.
+This repository contains original code and documentation plus compiled mapping
+snapshots under `data/`. It does **not** bundle game assets, card images, mod
+packages, or wiki prose. Mapping data is covered separately by
+[DATA_LICENSE.md](DATA_LICENSE.md).
 
 ## Format / parser references
 

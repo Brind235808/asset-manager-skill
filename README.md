@@ -38,6 +38,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -LibraryRoot "D:\ASSETS"
 
 - 创建 `D:\ASSETS\_SYSTEM`；
 - 复制 Python 工具和默认配置；
+- 如果本地还没有映射表，复制 `data/` 里的快照（已有映射不会被覆盖）；
 - 运行 `assets.py init` 创建分类目录、数据库和总表；
 - **不会移动任何现有资源**。
 
@@ -95,22 +96,25 @@ python "D:\ASSETS\_SYSTEM\assets.py" dupes
 - [references/ip-mapping.md](references/ip-mapping.md)：IP/角色映射来源与构建
 - [references/space-and-dedup.md](references/space-and-dedup.md)：空间、配额、重复检测、迁移
 
-## 关于映射数据
+## 附带映射快照
 
-仓库**不附带**完整的 `ip_map.json` / `acg_ip_map.json` / 第三方抓取缓存，原因：
+仓库附带两份构建好的映射，安装时直接可用：
 
-- Moegirl 数据内容遵循 CC BY-NC-SA，适合个人本地使用，不适合直接再分发大份数据；
-- Bangumi / B站 wiki / Fandom 各有使用条款；
-- 映射表会随新角色变化，应该本地构建，而不是发布一个快速过期的快照。
+| 文件 | 角色数 | 歧义 | 用途 |
+|---|---:|---:|---|
+| `data/ip_map.json` | 2,573 | 18 | 游戏/MOD/恋活 IP 识别 |
+| `data/acg_ip_map.json` | 44,821 | 11,999 | AI 内容/动漫角色 IP 查询 |
 
-仓库提供构建脚本和样例：
+安装脚本只在 `_SYSTEM` 里没有对应文件时复制，**不会覆盖你已有的映射**。
+
+映射可以继续本地重建：
 
 ```bat
 python "D:\ASSETS\_SYSTEM\wiki_ip_map.py" --apply
 python "D:\ASSETS\_SYSTEM\acg_ip_map.py" --apply
 ```
 
-具体数据源、缓存路径和许可说明见 [references/ip-mapping.md](references/ip-mapping.md)。
+代码是 MIT；映射数据是单独的数据层，来源、许可和再分发条件见 [DATA_LICENSE.md](DATA_LICENSE.md) 和 [data/README.md](data/README.md)。萌百来源内容为 CC BY-NC-SA，仅建议个人/非商业使用。
 
 ## 安全边界
 
@@ -124,4 +128,4 @@ python "D:\ASSETS\_SYSTEM\acg_ip_map.py" --apply
 
 代码采用 MIT License，见 [LICENSE](LICENSE)。
 
-第三方数据源、工具与格式参考见 [THIRD_PARTY.md](THIRD_PARTY.md)。仓库中的分类规则和文档可自由修改；用户自己的资源不随仓库分发。
+第三方数据源、工具与格式参考见 [THIRD_PARTY.md](THIRD_PARTY.md)。`data/` 映射快照单独适用 [DATA_LICENSE.md](DATA_LICENSE.md)，不要把它当作 MIT 代码的一部分。用户自己的资源不随仓库分发。

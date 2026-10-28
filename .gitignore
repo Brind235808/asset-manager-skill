@@ -4,8 +4,6 @@ __pycache__/
 venv/
 .env
 _SYSTEM/
-ip_map.json
-acg_ip_map.json
 ip_map.backup.json
 ip_sources/
 catalog.db
