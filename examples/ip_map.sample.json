@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "ip_aliases": {
+    "原神": ["原神", "genshin", "gimi"],
+    "崩坏星穹铁道": ["崩坏星穹铁道", "崩铁", "starrail", "hsr"],
+    "绝区零": ["绝区零", "zenless", "zzz"],
+    "鸣潮": ["鸣潮", "wuthering waves", "wuwa", "wwmi"]
+  },
+  "characters": {
+    "甘雨": "原神",
+    "雷电将军": "原神",
+    "时崎狂三": "约会大作战",
+    "博丽灵梦": "东方Project"
+  },
+  "ambiguous": {
+    "爱丽丝": ["蔚蓝档案", "绝区零", "NIKKE", "东方Project"]
+  },
+  "manual_resolutions": {},
+  "character_sources": {},
+  "meta": {
+    "note": "Sample only. Build the full map locally from the documented sources; do not redistribute third-party dumps blindly."
+  }
+}
