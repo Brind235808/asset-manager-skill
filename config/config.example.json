@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "reserve_gb": {
+    "C": 20,
+    "D": 25
+  },
+  "quotas_gb": {
+    "01_GameMods": 25,
+    "02_MMD": 40,
+    "03_VRChat": 20,
+    "04_GameRips": 15,
+    "05_AI_Art": 40,
+    "06_Tutorials": 20,
+    "07_Reverse": 10,
+    "08_AuthorBackups": 20,
+    "09_GitHub": 8,
+    "10_AI_Work": 5,
+    "11_Koikatsu": 40,
+    "12_VAM": 60,
+    "90_Apps": 10
+  },
+  "seven_zip": "",
+  "preview_max_px": 900,
+  "categories": {
+    "01_GameMods": {
+      "label": "游戏MOD",
+      "template": "01_GameMods/{game}/{year}"
+    },
+    "01_GameMods/_Projects": {
+      "label": "MOD工程",
+      "template": "01_GameMods/{game}/_Projects/{year}"
+    },
+    "01_GameMods/_Tools": {
+      "label": "MOD工具",
+      "template": "01_GameMods/_Tools"
+    },
+    "02_MMD/Models": {
+      "label": "MMD模型",
+      "template": "02_MMD/Models/{year}"
+    },
+    "02_MMD/Models_FBX": {
+      "label": "FBX模型",
+      "template": "02_MMD/Models_FBX/{year}"
+    },
+    "02_MMD/Motions": {
+      "label": "MMD动作",
+      "template": "02_MMD/Motions/{year}"
+    },
+    "02_MMD/Cloth_MD": {
+      "label": "MD布料衣服",
+      "template": "02_MMD/Cloth_MD/{year}"
+    },
+    "02_MMD/Stages": {
+      "label": "MMD场景",
+      "template": "02_MMD/Stages/{year}"
+    },
+    "02_MMD/Materials": {
+      "label": "MMD材质/贴图",
+      "template": "02_MMD/Materials/{year}"
+    },
+    "02_MMD/References": {
+      "label": "MMD参考",
+      "template": "02_MMD/References/{year}"
+    },
+    "02_MMD/_Projects": {
+      "label": "MMD工程",
+      "template": "02_MMD/_Projects/{year}"
+    },
+    "02_MMD/_Tools": {
+      "label": "MMD工具",
+      "template": "02_MMD/_Tools"
+    },
+    "03_VRChat/Avatars": {
+      "label": "VRChat模型",
+      "template": "03_VRChat/Avatars/{year}"
+    },
+    "03_VRChat/Clothing": {
+      "label": "VRChat衣服",
+      "template": "03_VRChat/Clothing/{year}"
+    },
+    "03_VRChat/_Projects": {
+      "label": "VRChat工程",
+      "template": "03_VRChat/_Projects/{year}"
+    },
+    "03_VRChat/_Tools": {
+      "label": "VRChat工具",
+      "template": "03_VRChat/_Tools"
+    },
+    "04_GameRips": {
+      "label": "游戏解包",
+      "template": "04_GameRips/{game}/{kind}/{year}"
+    },
+    "05_AI_Art/LoRA": {
+      "label": "LoRA",
+      "template": "05_AI_Art/LoRA/{base}/{group}/{year}"
+    },
+    "05_AI_Art/Checkpoints": {
+      "label": "Checkpoint",
+      "template": "05_AI_Art/Checkpoints/{base}/{year}"
+    },
+    "05_AI_Art/Workflows": {
+      "label": "AI工作流",
+      "template": "05_AI_Art/Workflows/{year}"
+    },
+    "05_AI_Art/ComfyUI": {
+      "label": "ComfyUI资源",
+      "template": "05_AI_Art/ComfyUI"
+    },
+    "05_AI_Art/Tools": {
+      "label": "AI工具",
+      "template": "05_AI_Art/Tools"
+    },
+    "05_AI_Art/References": {
+      "label": "AI参考",
+      "template": "05_AI_Art/References"
+    },
+    "05_AI_Art/Outputs": {
+      "label": "AI产出",
+      "template": "05_AI_Art/Outputs/{year}"
+    },
+    "06_Tutorials/Video": {
+      "label": "教学视频",
+      "template": "06_Tutorials/Video/{year}"
+    },
+    "06_Tutorials/Docs": {
+      "label": "教学文档",
+      "template": "06_Tutorials/Docs/{year}"
+    },
+    "07_Reverse/Tools": {
+      "label": "逆向工具",
+      "template": "07_Reverse/Tools"
+    },
+    "07_Reverse/Scripts": {
+      "label": "逆向脚本",
+      "template": "07_Reverse/Scripts"
+    },
+    "07_Reverse/Docs": {
+      "label": "逆向资料",
+      "template": "07_Reverse/Docs"
+    },
+    "07_Reverse/Projects": {
+      "label": "逆向工程",
+      "template": "07_Reverse/Projects/{year}"
+    },
+    "08_AuthorBackups": {
+      "label": "作者备份",
+      "template": "08_AuthorBackups/{author}/{year}"
+    },
+    "09_GitHub": {
+      "label": "GitHub",
+      "template": "09_GitHub"
+    },
+    "10_AI_Work/Agents": {
+      "label": "AI Agent",
+      "template": "10_AI_Work/Agents/{year}"
+    },
+    "10_AI_Work/Chats": {
+      "label": "AI对话",
+      "template": "10_AI_Work/Chats/{year}"
+    },
+    "10_AI_Work/Outputs": {
+      "label": "AI工作产物",
+      "template": "10_AI_Work/Outputs/{year}"
+    },
+    "11_Koikatsu/Cards_Characters": {
+      "label": "恋活人物卡",
+      "template": "11_Koikatsu/{author}/{ip}/Cards_Characters"
+    },
+    "11_Koikatsu/Cards_Clothing": {
+      "label": "恋活服装卡",
+      "template": "11_Koikatsu/{author}/{ip}/Cards_Clothing"
+    },
+    "11_Koikatsu/Cards_Scenes": {
+      "label": "恋活场景卡",
+      "template": "11_Koikatsu/{author}/{ip}/Cards_Scenes"
+    },
+    "11_Koikatsu/Cards": {
+      "label": "恋活卡片待分",
+      "template": "11_Koikatsu/{author}/{ip}/Cards"
+    },
+    "11_Koikatsu/Mods": {
+      "label": "恋活MOD",
+      "template": "11_Koikatsu/{author}/{ip}/Mods"
+    },
+    "11_Koikatsu/Mods_Clothing": {
+      "label": "恋活服装MOD",
+      "template": "11_Koikatsu/{author}/{ip}/Mods_Clothing"
+    },
+    "11_Koikatsu/Plugins": {
+      "label": "恋活插件",
+      "template": "11_Koikatsu/{author}/_Plugins"
+    },
+    "11_Koikatsu/_Packs": {
+      "label": "恋活整包未拆",
+      "template": "11_Koikatsu/_Packs/{year}"
+    },
+    "11_Koikatsu/_Tools": {
+      "label": "恋活工具",
+      "template": "11_Koikatsu/_Tools"
+    },
+    "12_VAM/Packages": {
+      "label": "VAM包",
+      "template": "12_VAM/Packages/{author}"
+    },
+    "12_VAM/Scenes": {
+      "label": "VAM场景",
+      "template": "12_VAM/Scenes/{year}"
+    },
+    "12_VAM/Looks": {
+      "label": "VAM外观",
+      "template": "12_VAM/Looks/{year}"
+    },
+    "12_VAM/Clothing": {
+      "label": "VAM服装",
+      "template": "12_VAM/Clothing/{year}"
+    },
+    "12_VAM/Hair": {
+      "label": "VAM头发",
+      "template": "12_VAM/Hair/{year}"
+    },
+    "12_VAM/Morphs": {
+      "label": "VAM变形",
+      "template": "12_VAM/Morphs/{year}"
+    },
+    "12_VAM/Poses": {
+      "label": "VAM姿势",
+      "template": "12_VAM/Poses/{year}"
+    },
+    "12_VAM/Animations": {
+      "label": "VAM动画",
+      "template": "12_VAM/Animations/{year}"
+    },
+    "12_VAM/Plugins": {
+      "label": "VAM插件",
+      "template": "12_VAM/Plugins/{year}"
+    },
+    "12_VAM/Assets": {
+      "label": "VAM资产",
+      "template": "12_VAM/Assets/{year}"
+    },
+    "12_VAM/Textures": {
+      "label": "VAM贴图",
+      "template": "12_VAM/Textures/{year}"
+    },
+    "12_VAM/Presets": {
+      "label": "VAM预设待分",
+      "template": "12_VAM/Presets/{year}"
+    },
+    "12_VAM/_Unsorted": {
+      "label": "VAM待分",
+      "template": "12_VAM/_Unsorted/{year}"
+    },
+    "12_VAM/_Tools": {
+      "label": "VAM工具",
+      "template": "12_VAM/_Tools"
+    },
+    "90_Apps": {
+      "label": "便携软件",
+      "template": "90_Apps"
+    }
+  },
+  "top_categories": [
+    "01_GameMods",
+    "02_MMD",
+    "03_VRChat",
+    "04_GameRips",
+    "05_AI_Art",
+    "06_Tutorials",
+    "07_Reverse",
+    "08_AuthorBackups",
+    "09_GitHub",
+    "10_AI_Work",
+    "11_Koikatsu",
+    "12_VAM",
+    "90_Apps"
+  ],
+  "top_labels": {
+    "01_GameMods": "游戏MOD",
+    "02_MMD": "MMD",
+    "03_VRChat": "VRChat",
+    "04_GameRips": "游戏解包",
+    "05_AI_Art": "AI绘画",
+    "06_Tutorials": "教学资料",
+    "07_Reverse": "逆向资源",
+    "08_AuthorBackups": "作者备份",
+    "09_GitHub": "GitHub",
+    "10_AI_Work": "AI工作",
+    "11_Koikatsu": "恋活",
+    "12_VAM": "VAM",
+    "90_Apps": "便携软件"
+  },
+  "init_dirs": [
+    "00_INBOX",
+    "01_GameMods",
+    "01_GameMods/_Tools",
+    "02_MMD/Models",
+    "02_MMD/Models_FBX",
+    "02_MMD/Motions",
+    "02_MMD/Cloth_MD",
+    "02_MMD/Stages",
+    "02_MMD/Materials",
+    "02_MMD/References",
+    "02_MMD/_Projects",
+    "02_MMD/_Tools",
+    "03_VRChat/Avatars",
+    "03_VRChat/Clothing",
+    "03_VRChat/_Projects",
+    "03_VRChat/_Tools",
+    "04_GameRips/_Unassigned",
+    "05_AI_Art/LoRA",
+    "05_AI_Art/Checkpoints",
+    "05_AI_Art/Workflows",
+    "05_AI_Art/ComfyUI",
+    "05_AI_Art/Tools",
+    "05_AI_Art/References",
+    "05_AI_Art/Outputs",
+    "06_Tutorials/Video",
+    "06_Tutorials/Docs",
+    "07_Reverse/Tools",
+    "07_Reverse/Scripts",
+    "07_Reverse/Docs",
+    "07_Reverse/Projects",
+    "08_AuthorBackups",
+    "09_GitHub",
+    "10_AI_Work/Agents",
+    "10_AI_Work/Chats",
+    "10_AI_Work/Outputs",
+    "11_Koikatsu",
+    "11_Koikatsu/_Packs",
+    "11_Koikatsu/_Index",
+    "11_Koikatsu/_Tools",
+    "12_VAM/Packages",
+    "12_VAM/Scenes",
+    "12_VAM/Looks",
+    "12_VAM/Clothing",
+    "12_VAM/Hair",
+    "12_VAM/Morphs",
+    "12_VAM/Poses",
+    "12_VAM/Animations",
+    "12_VAM/Plugins",
+    "12_VAM/Assets",
+    "12_VAM/Textures",
+    "12_VAM/Presets",
+    "12_VAM/_Unsorted",
+    "12_VAM/_Tools",
+    "90_Apps",
+    "99_ARCHIVE/_DUPES",
+    "99_ARCHIVE/_COLD",
+    "_SYSTEM/logs",
+    "_SYSTEM/thumbs",
+    "_SYSTEM/backups"
+  ],
+  "games": [
+    {
+      "name": "原神",
+      "keywords": [
+        "原神",
+        "genshin",
+        "gimi",
+        "gi-mod",
+        "3dmigoto-gi"
+      ]
+    },
+    {
+      "name": "鸣潮",
+      "keywords": [
+        "鸣潮",
+        "wuthering",
+        "wuwa",
+        "wwmi"
+      ]
+    },
+    {
+      "name": "崩坏星穹铁道",
+      "keywords": [
+        "星穹",
+        "崩铁",
+        "starrail",
+        "star rail",
+        "hsr",
+        "srma"
+      ]
+    },
+    {
+      "name": "绝区零",
+      "keywords": [
+        "绝区零",
+        "zenless",
+        "zzz",
+        "zzmi"
+      ]
+    },
+    {
+      "name": "明日方舟终末地",
+      "keywords": [
+        "终末地",
+        "endfield",
+        "efmi"
+      ]
+    },
+    {
+      "name": "无限暖暖",
+      "keywords": [
+        "无限暖暖",
+        "infinity nikki",
+        "infinitynikki",
+        "innikki"
+      ]
+    },
+    {
+      "name": "尘白禁区",
+      "keywords": [
+        "尘白",
+        "snowbreak"
+      ]
+    },
+    {
+      "name": "蔚蓝档案",
+      "keywords": [
+        "蔚蓝档案",
+        "blue archive",
+        "bluearchive",
+        "blue-archive"
+      ]
+    },
+    {
+      "name": "NIKKE",
+      "keywords": [
+        "nikke",
+        "胜利女神"
+      ]
+    },
+    {
+      "name": "其他游戏",
+      "keywords": []
+    }
+  ],
+  "base_models": [
+    {
+      "name": "Illustrious",
+      "keywords": [
+        "illustrious",
+        "ilxl"
+      ]
+    },
+    {
+      "name": "NoobAI",
+      "keywords": [
+        "noobai",
+        "noob"
+      ]
+    },
+    {
+      "name": "Pony",
+      "keywords": [
+        "pony"
+      ]
+    },
+    {
+      "name": "SDXL",
+      "keywords": [
+        "sdxl",
+        "sd_xl",
+        "sdxl_base"
+      ]
+    },
+    {
+      "name": "SD1.5",
+      "keywords": [
+        "sd15",
+        "sd1.5",
+        "sd_1.5"
+      ]
+    },
+    {
+      "name": "Flux",
+      "keywords": [
+        "flux"
+      ]
+    },
+    {
+      "name": "WAN",
+      "keywords": [
+        "wan2",
+        "wan_",
+        "wanvideo"
+      ]
+    },
+    {
+      "name": "Qwen-Image",
+      "keywords": [
+        "qwen"
+      ]
+    },
+    {
+      "name": "Other",
+      "keywords": []
+    }
+  ],
+  "sources": [
+    "QQ",
+    "B站",
+    "百度云",
+    "3DM",
+    "Civitai",
+    "GitHub",
+    "网页下载",
+    "自制"
+  ],
+  "ips": [
+    {
+      "name": "碧蓝航线",
+      "keywords": [
+        "碧蓝航线",
+        "azur lane",
+        "azurlane"
+      ]
+    },
+    {
+      "name": "少女前线",
+      "keywords": [
+        "少女前线",
+        "girls frontline",
+        "gfl"
+      ]
+    },
+    {
+      "name": "明日方舟",
+      "keywords": [
+        "明日方舟",
+        "arknights"
+      ]
+    },
+    {
+      "name": "东方Project",
+      "keywords": [
+        "东方project",
+        "touhou",
+        "东方"
+      ]
+    },
+    {
+      "name": "FGO",
+      "keywords": [
+        "fate/grand",
+        "fgo",
+        "型月"
+      ]
+    },
+    {
+      "name": "偶像大师",
+      "keywords": [
+        "偶像大师",
+        "idolmaster"
+      ]
+    },
+    {
+      "name": "崩坏3",
+      "keywords": [
+        "崩坏3",
+        "honkai impact"
+      ]
+    },
+    {
+      "name": "战双帕弥什",
+      "keywords": [
+        "战双",
+        "punishing gray"
+      ]
+    },
+    {
+      "name": "原创",
+      "keywords": [
+        "原创",
+        "original character"
+      ]
+    }
+  ],
+  "archive_exts": [
+    ".zip",
+    ".zipmod",
+    ".7z",
+    ".rar",
+    ".tar",
+    ".gz",
+    ".bz2",
+    ".xz"
+  ],
+  "skip_scan_dirs": [
+    "_SYSTEM",
+    "00_INBOX",
+    "99_ARCHIVE",
+    "90_Apps",
+    "node_modules",
+    ".git",
+    "__pycache__",
+    "$RECYCLE.BIN",
+    "System Volume Information"
+  ]
+}
